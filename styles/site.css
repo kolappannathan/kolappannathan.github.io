@@ -1,0 +1,113 @@
+main {
+  margin-top: 75px;
+}
+
+nav {
+  background-color: #115599;
+  color: #ffffff;
+}
+
+nav > a, nav > a:hover, nav > a:visited {
+  color: #ffffff;
+}
+
+p {
+  text-indent: 2em;
+}
+
+table{
+  width: 100%;
+}
+
+td,th {
+  padding:0.5rem 1rem;
+}
+
+th {
+  font-weight:bold;
+}
+
+.content-heading {
+  color: #249955;
+  font-size: 25px;
+  margin: 10px 0px 5px 0px;
+}
+
+.card-body {
+  background-color: #f8f8f8;
+  width: 100%;
+}
+
+.card-deck {
+  margin: 5px 5px 15px 5px;
+  width: 100%;
+}
+
+.card-header {
+  width: 100%;
+}
+
+/* CSS for callouts*/
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+*.bs-callout:empty {
+   padding: 20px;
+   margin: 0px;
+   border: none;
+}
+
+.bs-callout .bs-callout-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default .bs-callout-heading {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary .bs-callout-heading {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success .bs-callout-heading {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger .bs-callout-heading {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning .bs-callout-heading {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info .bs-callout-heading {
+    color: #115599;
+}
