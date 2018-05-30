@@ -3,7 +3,7 @@ main {
 }
 
 nav {
-  background-color: #115599;
+  background-color: #0375B4;
   color: #ffffff;
 }
 
@@ -28,23 +28,13 @@ th {
 }
 
 .content-heading {
-  color: #249955;
+  color: #007849;
   font-size: 25px;
   margin: 10px 0px 5px 0px;
 }
 
-.card-body {
-  background-color: #f8f8f8;
-  width: 100%;
-}
-
-.card-deck {
-  margin: 5px 5px 15px 5px;
-  width: 100%;
-}
-
-.card-header {
-  width: 100%;
+.card {
+    margin-bottom: 5px;
 }
 
 /* CSS for callouts*/
