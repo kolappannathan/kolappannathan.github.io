@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Accordion JS is a accordion implemented in vanilla javascript.">
+  <meta name="author" content="Kolappan Nathan">
+
+  <title>Accordion JS | kolappannathan.github.io</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../../styles/site.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WG38H4T');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WG38H4T" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar fixed-top">
+    <a class="navbar-brand" href="../../index.html">Home</a>
+  </nav>
+  <main role="main" class="container">
+
+    <h2 class="content-heading">
+      Accordion
+    </h2>
+    <div>
+      <p>
+        This is a simple accordion done in vanilla js which is based on pinceladasdaweb's work. It is lightweight, easy to install and use.
+      </p>
+      <p>
+        <a href="./demo.html" target="blank">
+        <i class="far fa-eye"></i> Click here for demo
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/kolappannathan/accordion/releases" target="blank">
+          <i class="fas fa-download"></i> Get Latest version
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/kolappannathan/accordion/zipball/master" target="blank">
+          <i class="fas fa-file-archive"></i> Download zip file
+        </a>
+      </p>
+    </div>
+
+    <h2 class="content-heading">
+      Usage
+    </h2>
+    <div>
+      <ol>
+        <li>Paste right before your page's closing
+          <code>&lt;/body&gt;</code> tag:</li>
+      </ol>
+      <pre class="code-section">
+        <code>
+          &lt;script type=&quot;text/javascript&quot; src=&quot;accordion.min.js&quot;&gt;&lt;/script&gt;</code>
+      </pre>
+      <ol start="2">
+        <li>Include the css in your html page</li>
+      </ol>
+      <pre class="code-section">
+        <code>
+          &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;accordion.min.css&quot;&gt;</code>
+      </pre>
+      <ol start="3" style="list-style-type: decimal">
+        <li>Minimum HTML to make it work:</li>
+      </ol>
+      <pre class="code-section">
+        <code>
+          &lt;div class=&quot;acc-section&quot;&gt;
+          &lt;h2 class=&quot;acc-title&quot;&gt;Title here&lt;/h2&gt;
+          &lt;div&gt;&lt;!-- HTML here --&gt;&lt;/div&gt;
+          &lt;h5 class=&quot;acc-title&quot;&gt;Title here&lt;/h5&gt;
+          &lt;div&gt;&lt;!-- HTML here --&gt;&lt;/div&gt;
+          &lt;div class=&quot;acc-title&quot;&gt;Title here&lt;/div&gt;
+          &lt;div&gt;&lt;!-- HTML here --&gt;&lt;/div&gt;
+          &lt;/div&gt;</code>
+      </pre>
+    </div>
+
+  </main>
+</body>
+
+</html>

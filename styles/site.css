@@ -1,43 +1,62 @@
+/* #region Navigation */
+
 main {
-  margin-top: 75px;
+    /* To leave space on top for nav bar*/
+    margin-top: 75px;
 }
 
 nav {
-  background-color: #0375B4;
-  color: #ffffff;
+    background-color: #0375B4;
+    color: #ffffff;
 }
 
-nav > a, nav > a:hover, nav > a:visited {
-  color: #ffffff;
+nav>a,
+nav>a:hover,
+nav>a:visited {
+    /* Color formatting for Home button */
+    color: #ffffff;
 }
 
-p {
-  text-indent: 2em;
+/* #endregion Navigation */
+
+/* #region Table */
+
+table {
+    width: 100%;
 }
 
-table{
-  width: 100%;
-}
-
-td,th {
-  padding:0.5rem 1rem;
+td,
+th {
+    padding: 0.5rem 1rem;
 }
 
 th {
-  font-weight:bold;
+    font-weight: bold;
+}
+
+/* #endregion Table */
+
+p {
+    text-indent: 2em;
 }
 
 .content-heading {
-  color: #007849;
-  font-size: 25px;
-  margin: 10px 0px 5px 0px;
+    color: #007849;
+    font-size: 25px;
+    margin: 10px 0px 5px 0px;
 }
 
 .card {
     margin-bottom: 5px;
 }
 
-/* CSS for callouts*/
+.code-section {
+    /*Background highlighting for code. A slightly darker version of GitHub*/
+    background-color: #ebf2fa;
+}
+
+/* #region CSS for callouts*/
+
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
@@ -47,57 +66,74 @@ th {
 }
 
 *.bs-callout:empty {
-   padding: 20px;
-   margin: 0px;
-   border: none;
+    padding: 20px;
+    margin: 0px;
+    border: none;
 }
 
 .bs-callout .bs-callout-heading {
     margin-top: 0;
     margin-bottom: 5px;
 }
+
 .bs-callout p:last-child {
     margin-bottom: 0;
 }
+
 .bs-callout code {
     border-radius: 3px;
 }
+
 .bs-callout+.bs-callout {
     margin-top: -5px;
 }
+
 .bs-callout-default {
     border-left-color: #777;
 }
+
 .bs-callout-default .bs-callout-heading {
     color: #777;
 }
+
 .bs-callout-primary {
     border-left-color: #428bca;
 }
+
 .bs-callout-primary .bs-callout-heading {
     color: #428bca;
 }
+
 .bs-callout-success {
     border-left-color: #5cb85c;
 }
+
 .bs-callout-success .bs-callout-heading {
     color: #5cb85c;
 }
+
 .bs-callout-danger {
     border-left-color: #d9534f;
 }
+
 .bs-callout-danger .bs-callout-heading {
     color: #d9534f;
 }
+
 .bs-callout-warning {
     border-left-color: #f0ad4e;
 }
+
 .bs-callout-warning .bs-callout-heading {
     color: #f0ad4e;
 }
+
 .bs-callout-info {
     border-left-color: #5bc0de;
 }
+
 .bs-callout-info .bs-callout-heading {
     color: #115599;
 }
+
+/* #endregion CSS for callouts*/
