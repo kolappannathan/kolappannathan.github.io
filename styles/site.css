@@ -3,6 +3,7 @@
 body{
     font-family: 'Ubuntu', sans-serif;
     background-color: #fbfbfb;
+    line-height: 27px;
 }
 
 p {
@@ -12,7 +13,7 @@ p {
 .content-heading {
     color: #007849;
     font-size: 25px;
-    margin: 10px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 .card {
@@ -90,6 +91,7 @@ th {
 .bs-callout .bs-callout-heading {
     margin-top: 0;
     margin-bottom: 5px;
+    font-size: 1.3em;
 }
 
 .bs-callout p:last-child {
