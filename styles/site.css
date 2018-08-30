@@ -1,4 +1,39 @@
-/* #region Navigation */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fbfbfb;
+}
+
+p {
+    text-indent: 2em;
+}
+
+.content-heading {
+    color: #007849;
+    font-size: 25px;
+    margin: 10px 0px 5px 0px;
+}
+
+.card {
+    margin-bottom: 5px;
+    background-color: #fcfcfc;
+}
+
+/* #region Code Block*/
+
+.code-section {
+    /*Background highlighting for code. A slightly darker version of GitHub*/
+    background-color: #ebf2fa;
+}
+
+code{
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+/* #endregion Code Block*/
+
+/* #region Navigation*/
 
 main {
     /* To leave space on top for nav bar*/
@@ -17,9 +52,9 @@ nav>a:visited {
     color: #ffffff;
 }
 
-/* #endregion Navigation */
+/* #endregion Navigation*/
 
-/* #region Table */
+/* #region CSS for Tables*/
 
 table {
     width: 100%;
@@ -34,28 +69,9 @@ th {
     font-weight: bold;
 }
 
-/* #endregion Table */
+/* #endregion Tables*/
 
-p {
-    text-indent: 2em;
-}
-
-.content-heading {
-    color: #007849;
-    font-size: 25px;
-    margin: 10px 0px 5px 0px;
-}
-
-.card {
-    margin-bottom: 5px;
-}
-
-.code-section {
-    /*Background highlighting for code. A slightly darker version of GitHub*/
-    background-color: #ebf2fa;
-}
-
-/* #region CSS for callouts*/
+/* #region Callouts*/
 
 .bs-callout {
     padding: 20px;
@@ -136,4 +152,4 @@ p {
     color: #115599;
 }
 
-/* #endregion CSS for callouts*/
+/* #endregion Callouts*/
