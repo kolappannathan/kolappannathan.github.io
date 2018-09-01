@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A C# based logger class that logs errors into a CSV file.">
+    <meta name="author" content="Kolappan Nathan">
+
+    <title>CSV Logger | kolappannathan.github.io</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../styles/site.css">
+    <!-- End CSS -->
+
+    <!-- Bootstrap -->
+    <script src="../../lib/bootstrap/jquery.slim.min.js"></script>
+    <script src="../../lib/bootstrap/popper.min.js"></script>
+    <script src="../../lib/bootstrap/bootstrap.min.js"></script>
+    <!-- End Bootstrap -->
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WG38H4T');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WG38H4T" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav class="navbar fixed-top">
+        <a class="navbar-brand" href="../../index.html">Home</a>
+    </nav>
+    <main class="container">
+
+        <h2 class="content-heading">
+            Simple CSV Logger
+        </h2>
+        <div>
+            <p>
+                This is a C# logger class which logs error and other debug info into CSV files instead of a traditional text files. The logger
+                also contains 6 levels of logging and log from text messages as well as exceptions.
+            </p>
+            <div class="row">
+                <div class="col-lg-6 col-md- col-sm-6 col-xs-12">
+                    <a href="https://github.com/kolappannathan/simple-csv-logger" target="blank">
+                        <i class="fas fa-download"></i> Get Latest version
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <a href="https://github.com/kolappannathan/simple-csv-logger/zipball/master" target="blank">
+                        <i class="fas fa-file-archive"></i> Download zip file
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="content-heading">
+            Usage
+        </h2>
+        <div>
+            <p>
+                The logger class creates CSV log files in the projects main directory. This directory is choosen so that the class can be
+                used for both windows application and web based applciations. Both the filename and the diretory path are
+                set at the constructor. Modify them to suit your application.
+            </p>
+        </div>
+
+    </main>
+</body>
+
+</html>
