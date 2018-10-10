@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% include meta-common.html %}
+
+    <title>{{page.title}} | kolappannathan.com </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <!-- End CSS -->
+
+    <!-- Bootstrap -->
+    <script src="/assets/lib/bootstrap/jquery.slim.min.js"></script>
+    <script src="/assets/lib/bootstrap/popper.min.js"></script>
+    <script src="/assets/lib/bootstrap/bootstrap.min.js"></script>
+    <!-- End Bootstrap -->
+
+    {% include g-tag-head.html %}
+
+</head>
+
+<body>
+    {% include g-tag-body.html %}
+
+    {% include nav.html %}
+
+    {{content}}
+
+</body>
+
+</html>
