@@ -3,32 +3,29 @@ title: Home
 layout: default
 ---
 
-<main class="container">
+<div>
+  <h3 class="content-heading">Hi there</h3>
+  <p>I am Kolappan. This site is home to all my GitHub projects and their documentation. Click on a project to know
+    more
+    details about them. Read more
+    <a href="/pages/about-me.html">about me here</a>.</p>
+</div>
 
-  <div>
-    <h3 class="content-heading">Hi there</h3>
-    <p>I am Kolappan. This site is home to all my GitHub projects and their documentation. Click on a project to know
-      more
-      details about them. Read more
-      <a href="/pages/about-me.html">about me here</a>.</p>
-  </div>
+<h3 class="content-heading">Projects</h3>
+<br>
 
-  <h3 class="content-heading">Projects</h3>
-  <br>
-
-  <div class="row">
-    {% for item in site.data.project-cards %}
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">{{item.title}}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{item.subtitle}}</h6>
-          <p class="card-text">{{item.desc}}</p>
-          <a href="{{item.know-more-link}}" class="card-link">Know More</a>
-          <a href="{{item.github-link}}" target="blank" class="card-link">View in GitHub</a>
-        </div>
+<div class="row">
+  {% for item in site.data.project-cards %}
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{item.subtitle}}</h6>
+        <p class="card-text">{{item.desc}}</p>
+        <a href="{{item.know-more-link}}" class="card-link">Know More</a>
+        <a href="{{item.github-link}}" target="blank" class="card-link">View in GitHub</a>
       </div>
     </div>
-    {% endfor %}
   </div>
-</main>
+  {% endfor %}
+</div>

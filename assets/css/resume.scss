@@ -1,7 +1,14 @@
 ---
 # this ensures Jekyll reads the file to be transformed into CSS later
-# only Main files contain this front matter, not partials.
+# ignore the error
 ---
+
+/*
+* CSS in resume page
+* To be used in combination with resume-print.css
+* CSS separated for render blocking css.
+* Ref: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css
+*/
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:500');
 
@@ -181,29 +188,5 @@ code {
   #infoBlock {
     margin-left: 0;
     text-align: center;
-  }
-}
-@media print {
-  #resume {
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 0px 0px;
-    border: 0px;
-    background: #fff;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    font-size: 12px;
-  }
-
-  .colophon {
-    display: none;
-  }
-
-  .sectionName {
-    width: 99px;
-  }
-
-  .sectionContent, #infoBlock {
-    margin-left: 100px;
   }
 }

@@ -13,8 +13,8 @@ collections:
 # Handling Reading
 safe                : false
 include             : [".htaccess"]
-exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files          : [".git", ".svn"]
+exclude             : ["Gemfile", "Gemfile.lock", "README.md", "LICENSE", ".gitignore", "my-site.code-workspace"]
+keep_files          : [".git", ".svn", "assets/images", "assets/lib", "CNAME"]
 encoding            : "utf-8"
 markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter : false
@@ -57,9 +57,22 @@ liquid:
   strict_filters    : false
   strict_variables  : false
 
+# Scss / CSS compression
 sass:
     style: compressed
     sass_dir: assets/css
+
+# HTML compression
+# Ref: https://github.com/penibelst/jekyll-compress-html
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
 
 # Markdown Processors
 rdiscount:

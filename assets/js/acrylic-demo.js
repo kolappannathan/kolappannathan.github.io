@@ -4,7 +4,7 @@ document.onload = function () {
 
 function changebg() {
 
-    // deleting previously set rules
+    /* deleting previously set rules */
     if (window.isFirstTime == false) {
         document.styleSheets[document.styleSheets.length - 1].deleteRule(window.nkRuleIndex);
     }
@@ -12,13 +12,13 @@ function changebg() {
 
     let newurl = document.getElementById("img-input").value;
 
-    // setting bg-image for body
+    /* setting bg-image for body */
     let elements = document.getElementsByTagName("body");
     for (let i = 0; i < elements.length; i++) {
         elements[i].style.backgroundImage = "url(" + newurl + ")";
     }
 
-    // setting psudo class for nk-acrylic by using a new class
+    /* setting psudo class for nk-acrylic by using a new class */
     let el = document.getElementsByClassName("nk-acrylic");
     for (let i = 0; i < el.length; i++) {
         el[i].classList.remove("nk-new-acrylic");

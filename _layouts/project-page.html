@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<h2 class="content-heading">
+    {{ page.title }}
+</h2>
+
+<div>
+    <p>
+        {{ page.project-desc }}
+    </p>
+    <div class="row">
+        {% if page.demo-url != null %}
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <a href="{{ page.demo-url }}" target="blank">
+                <i class="far fa-eye"></i> Click here for demo
+            </a>
+        </div>
+        {% endif %}
+        
+        {% if page.demo-url == null %}
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        {% else %}
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        {% endif %}
+            <a href="{{ page.download-url-latest }}" target="blank">
+                <i class="fas fa-download"></i> Get Latest version
+            </a>
+        </div>
+        {% if page.demo-url == null %}
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        {% else %}
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        {% endif %}
+            <a href="{{ page.download-url-zip }}" target="blank">
+                <i class="fas fa-file-archive"></i> Download Project archieve
+            </a>
+        </div>
+    </div>
+</div>
+
+{{ content }}
+
+{% if page.credits != null %}
+<h2 class="content-heading">Credits</h2>
+<div role="doc-credits"><p>{{ page.credits }}</p></div>
+{% endif %}
+
+<h2 class="content-heading">Disclaimer</h2>
+<div role="doc-notice"><p>These software is provided on a AS IS basis. No warranty is provided with this software. <b>Make sure to backup your data before using this software.</b></p></div>
+<br>
