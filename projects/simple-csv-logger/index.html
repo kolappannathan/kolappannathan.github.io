@@ -16,11 +16,30 @@ layout: project-page
     Usage
 </h2>
 <div>
-    <p>
-        The logger class creates CSV log files in the projects main directory. This directory is choosen so
-        that the class can be
-        used for both windows application and web based applciations. Both the filename and the diretory path
-        are
-        set at the constructor. Modify them to suit your application.
-    </p>
+    <ol>
+        <li>Install the nuget package.</li>
+        <li>Create a csvlogger instance in your base class.</li>
+        <li>Pass the filename, datetime, relative path and other parameters according to your application.</li>
+        <li>Create wrapper functions for the functions you need from csv.logger.</li>
+        <li>Inherit this base class in your other classes.</li>
+    </ol>
+    <pre class="code-section">
+        <code>
+            public class Base
+            {
+              private nk.logger.csv.Logger csvLogger;
+              private string dateFormat = "yyyy-MM-dd HH:mm:ss.fff";
+              private string fileName = "ErrorLog";
+            
+            public Base()
+            {
+            csvLogger = new nk.logger.csv.Logger(dateFormat, fileName);
+            }
+            
+            public void Error(Exception ex)
+            {
+            csvLogger.Error(ex);
+            }
+        </code>
+    </pre>
 </div>
