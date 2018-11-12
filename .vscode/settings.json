@@ -1,1 +1,6 @@
-{}
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "html.format.endWithNewline": true,
+    "html.format.indentInnerHtml": true
+}
