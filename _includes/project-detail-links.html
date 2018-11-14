@@ -1,4 +1,12 @@
 <div class="row">
+    {% if page.nuget-url != null %}
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="{{ page.nuget-url }}" target="blank">
+            <i class="fas fa-download"></i> Download Nuget Package
+        </a>
+    </div>
+    {% endif %}
+
     {% if page.demo-url != null %}
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <a href="{{ page.demo-url }}" target="blank">
@@ -7,24 +15,19 @@
     </div>
     {% endif %}
 
-    {% if page.demo-url == null %}
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        {% else %}
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            {% endif %}
-            <a href="{{ page.download-url-latest }}" target="blank">
-                <i class="fas fa-download"></i> Get Latest version
-            </a>
-        </div>
-        {% if page.demo-url == null %}
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            {% else %}
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                {% endif %}
-                <a href="{{ page.download-url-zip }}" target="blank">
-                    <i class="fas fa-file-archive"></i> Download Project archieve
-                </a>
-            </div>
-        </div>
+    {% if page.download-url-latest != null %}
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="{{ page.download-url-latest }}" target="blank">
+            <i class="fas fa-download"></i> Get Latest version
+        </a>
     </div>
+    {% endif %}
+
+    {% if page.download-url-zip != null %}
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="{{ page.download-url-zip }}" target="blank">
+            <i class="fas fa-file-archive"></i> Download Project archieve
+        </a>
+    </div>
+    {% endif %}
 </div>
