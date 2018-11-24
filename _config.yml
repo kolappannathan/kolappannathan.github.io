@@ -2,7 +2,6 @@
 source              : .
 destination         : ./_site
 collections_dir     : .
-plugins_dir         : _plugins
 layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
@@ -24,10 +23,6 @@ show_drafts         : null
 limit_posts         : 0
 future              : false
 unpublished         : false
-
-# Plugins
-whitelist           : []
-plugins             : []
 
 # Conversion
 markdown            : kramdown
