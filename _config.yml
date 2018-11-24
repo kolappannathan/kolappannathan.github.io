@@ -12,11 +12,11 @@ collections:
 
 # Handling Reading
 safe                : false
-include             : [".htaccess"]
+include             : []
 exclude             : [".git", ".vscode", ".gitignore", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
-keep_files          : [".svn", "assets/favicons", "assets/images", "assets/lib", "browserconfig.xml", "favicon.ico", "site.webmanifest"]
+keep_files          : ["assets/favicons", "assets/images", "assets/lib", "browserconfig.xml", "favicon.ico", "site.webmanifest"]
 encoding            : "utf-8"
-markdown_ext        : "markdown,md"
+markdown_ext        : "md"
 strict_front_matter : false
 
 # Filtering Content
