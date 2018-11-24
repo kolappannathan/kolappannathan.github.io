@@ -14,9 +14,9 @@ collections:
 safe                : false
 include             : [".htaccess"]
 exclude             : [".git", ".vscode", ".gitignore", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
-keep_files          : [".svn", "assets/favicons", "assets/images", "assets/lib", "browserconfig.xml", "CNAME", "favicon.ico", "site.webmanifest"]
+keep_files          : [".svn", "assets/favicons", "assets/images", "assets/lib", "browserconfig.xml", "favicon.ico", "site.webmanifest"]
 encoding            : "utf-8"
-markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
+markdown_ext        : "markdown,md"
 strict_front_matter : false
 
 # Filtering Content
@@ -44,7 +44,7 @@ baseurl             : "" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
-permalink           : date
+permalink           : :year-:month-:day/:title:output_ext
 paginate_path       : /page:num
 timezone            : null
 
