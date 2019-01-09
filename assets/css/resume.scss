@@ -19,37 +19,32 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
-ul {
-  margin-bottom: 0;
+.candidate-name {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-li {
+.highlight-list {
+  padding-left: 20px;
+  margin-top: 6px;
+}
+
+.highlight-list > li {
   margin-bottom: 2px;
   list-style-type: square;
-}
-li > ul li {
-  list-style-type: disc;
-}
-li > ul li:last-child {
-  margin-bottom: 10px;
 }
 
 a {
   text-decoration: none;
   color: #069;
   word-wrap: break-word;
-  border: 0;
 }
 a:hover {
   border-bottom: 1px solid #069;
-}
-
-code {
-  font-family: Consolas, monaco, monospace;
 }
 
 #resume {
@@ -61,21 +56,7 @@ code {
   box-shadow: 0 5px 10px 0 rgba(69, 129, 208, 0.12);
 }
 
-#avatarBlock {
-  width: 150px;
-  float: left;
-}
-
-#infoBlock {
-  margin-left: 151px;
-}
-
-.largeFont {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.sectionName {
+.section-name {
   width: 150px;
   display: block;
   position: absolute;
@@ -83,32 +64,27 @@ code {
   color: #aaa;
 }
 
-.sectionContent {
+.section-content {
   width: auto;
   margin-left: 151px;
   display: block;
   margin-bottom: 20px;
   text-align: justify;
 }
-.sectionContent ul {
-  padding-left: 20px;
-  margin-top: 6px;
-}
-.sectionContent .title {
+
+.section-title {
   font-weight: bold;
 }
-.sectionContent .date {
-  display: block;
+
+.time-period {
   font-family: Consolas, monaco, monospace;
 }
-.sectionContent .company {
+
+.company {
   color: #f14e32;
 }
-.sectionContent .separator {
-  height: 14px;
-}
 
-.sectionLine {
+.section-divider {
   border-style: solid;
   border-width: 1px;
   border-color: #f3f3f3;
@@ -123,17 +99,16 @@ code {
 
 .cert li {
   margin-top: 5px;
-  margin-bottom: 5px;
 }
 
-.colophon {
+.footer {
   margin-top: 50px;
   color: #999;
   font-size: 0.8em;
   letter-spacing: 1px;
 }
 
-.colophon-mark {
+.footer-mark {
   width: 30px;
   border-top: 1px solid #999;
   margin-bottom: 5px;
@@ -162,31 +137,14 @@ code {
     border: none;
   }
 
-  .sectionContent {
+  .section-content {
     width: auto;
     margin-left: 0;
   }
 
-  .sectionName {
+  .section-name {
     width: auto;
     position: relative;
-    text-align: center;
-  }
-
-  .smallFont {
-    font-size: 14px;
-  }
-
-  #avatarBlock {
-    float: none;
-    display: block;
-    text-align: center;
-    width: auto;
-    margin-bottom: 5px;
-  }
-
-  #infoBlock {
-    margin-left: 0;
     text-align: center;
   }
 }
