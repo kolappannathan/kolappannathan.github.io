@@ -1,12 +1,4 @@
 <div class="row">
-    {% if page.nuget-url != null %}
-    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <a href="{{ page.nuget-url }}" target="blank">
-            <i class="fas fa-download"></i> Download Nuget Package
-        </a>
-    </div>
-    {% endif %}
-
     {% if page.demo-url != null %}
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <a href="{{ page.demo-url }}" target="blank">
@@ -26,8 +18,32 @@
     {% if page.download-url-zip != null %}
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <a href="{{ page.download-url-zip }}" target="blank">
-            <i class="fas fa-file-archive"></i> Download Project archieve
+            <i class="fas fa-file-archive"></i> Download Project archive
         </a>
     </div>
     {% endif %}
 </div>
+
+{% if page.nuget-url != null or page.npm-url != null %}
+
+<br>
+<h5>Download Via</h5>
+
+<div class="row">
+    {% if page.npm-url != null %}
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="{{ page.npm-url }}" target="blank">
+            <i class="fab fa-npm"></i> NPM
+        </a>
+    </div>
+    {% endif %}
+
+    {% if page.nuget-url != null %}
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="{{ page.nuget-url }}" target="blank">
+            <i class="fas fa-external-link-alt"></i> Nuget
+        </a>
+    </div>
+    {% endif %}
+</div>
+{% endif %}
