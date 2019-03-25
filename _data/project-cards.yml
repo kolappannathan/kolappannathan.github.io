@@ -18,11 +18,6 @@
   desc: A simple css stylesheet for creating acrylic effect / frozen glass effect in websites. This is inpired from Microsoft's Fluent Design Language in Windows 10.
   know-more-link: /projects/acrylic-css/index.html
   github-link: https://github.com/kolappannathan/acrylic-css
-- title: Language Packs for Code2Go
-  subtitle: Extend the code editor
-  desc: The language packs for Code2Go enhances the usablity of the Windows Phone code editor. It adds support for more prgramming languages by adding keyword, rules and syntax highlighting.
-  know-more-link: /projects/language-packs-for-code2go/index.html
-  github-link: https://github.com/kolappannathan/Language-packs-for-Code2Go
 - title: Accordion JS
   subtitle: A plain vanilla js accordion
   desc: This is a dropdown or accordion implemented in javascript without any third party library. Useful for those who prefer lightweight accordion.
@@ -33,4 +28,9 @@
   desc: This repository contains income and expense categories that can be used in an expense manager application. The data is available in YAML format.
   know-more-link: /projects/expense-manager-categories/index.html 
   github-link: https://github.com/kolappannathan/expense-manager-categories
+  - title: Language Packs for Code2Go
+  subtitle: Extend the code editor
+  desc: The language packs for Code2Go enhances the usablity of the Windows Phone code editor. It adds support for more prgramming languages by adding keyword, rules and syntax highlighting.
+  know-more-link: /projects/language-packs-for-code2go/index.html
+  github-link: https://github.com/kolappannathan/Language-packs-for-Code2Go
   
