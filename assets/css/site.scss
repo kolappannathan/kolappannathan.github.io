@@ -3,94 +3,84 @@
 # ignore the error
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono");
 
-body{
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #fbfbfb;
-    line-height: 27px;
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #fbfbfb;
+  line-height: 27px;
 }
 
 p {
-    text-indent: 2em;
+  text-indent: 2em;
 }
 
 .content-heading {
-    color: #007849;
-    font-size: 25px;
-    margin: 10px 0px 10px 0px;
+  color: #007849;
+  font-size: 25px;
+  margin: 10px 0px 10px 0px;
 }
 
 .card {
-    margin-bottom: 5px;
-    background-color: #fcfcfc;
+  margin-bottom: 5px;
+  background-color: #fcfcfc;
 }
 
 /* #region Social Media Icons*/
 
-.social-list{
-    list-style: none;
-    font-size: 30px;
-    text-align: center;
-}
+.social-list {
+  list-style: none;
+  font-size: 30px;
+  text-align: center;
 
-.social-list > a {
+  a {
     display: inline-block;
     margin: 1px 5px 1px 0px;
     max-height: 50px;
     min-width: 50px;
+    div {
+      padding: 10px 0px 10px 0px;
+    }
   }
 
-  .social-list > a > div {
-    padding: 10px 0px 10px 0px;
-  }
-
-  .social-list .facebook {
-    background-color: #3B5998;
-    color: #ffffff;
-  }
-  .social-list .linkedin {
-    background-color: #0077B5;
+  .facebook {
+    background-color: #3b5998;
     color: #ffffff;
   }
 
-  .social-list .twitter {
-    background-color: #1DA1F2;
+  .linkedin {
+    background-color: #0077b5;
     color: #ffffff;
   }
 
-  .social-list .instagram {
+  .twitter {
+    background-color: #1da1f2;
+    color: #ffffff;
+  }
+
+  .instagram {
     background-color: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
     color: #ffffff;
   }
 
-  .social-list .google-plus {
-    background-color: #D04338;
-    color: #ffffff;
+  .medium {
+    background-color: #000;
+    color: #fff;
   }
-
-  .social-list .youtube {
-    background-color: #FF0505;
-    color: #ffffff;
-  }
-  
-  .social-list .medium {
-      background-color: #000;
-      color: #fff;
-  }
+}
 
 /* #endregion Social Media Icons*/
 
 /* #region Code Block*/
 
 .code-section {
-    /*Background highlighting for code. A slightly darker version of GitHub*/
-    background-color: #ebf2fa;
+  /*Background highlighting for code. A slightly darker version of GitHub*/
+  background-color: #ebf2fa;
 }
 
-code{
-    font-family: 'Ubuntu Mono', monospace;
+code {
+  font-family: "Ubuntu Mono", monospace;
 }
 
 /* #endregion Code Block*/
@@ -98,20 +88,20 @@ code{
 /* #region Navigation*/
 
 main {
-    /* To leave space on top for nav bar*/
-    margin-top: 75px;
+  /* To leave space on top for nav bar*/
+  margin-top: 75px;
 }
 
 nav {
-    background-color: #0375B4;
-    color: #ffffff;
-}
+  background-color: #0375b4;
+  color: #ffffff;
 
-nav>a,
-nav>a:hover,
-nav>a:visited {
+  a,
+  a:hover,
+  a:visited {
     /* Color formatting for Home button */
     color: #ffffff;
+  }
 }
 
 /* #endregion Navigation*/
@@ -119,16 +109,16 @@ nav>a:visited {
 /* #region CSS for Tables*/
 
 table {
-    width: 100%;
+  width: 100%;
 }
 
 td,
 th {
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 th {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* #endregion Tables*/
@@ -136,83 +126,83 @@ th {
 /* #region Callouts*/
 
 .bs-callout {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #eee;
-    border-left-width: 5px;
-    border-radius: 3px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #dddddd;
+  border-left-width: 5px;
+  border-radius: 3px;
 }
 
 *.bs-callout:empty {
-    padding: 20px;
-    margin: 0px;
-    border: none;
+  padding: 20px;
+  margin: 0px;
+  border: none;
 }
 
 .bs-callout .bs-callout-heading {
-    margin-top: 0;
-    margin-bottom: 5px;
-    font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.3em;
 }
 
 .bs-callout p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .bs-callout code {
-    border-radius: 3px;
+  border-radius: 3px;
 }
 
-.bs-callout+.bs-callout {
-    margin-top: -5px;
+.bs-callout + .bs-callout {
+  margin-top: -5px;
 }
 
 .bs-callout-default {
-    border-left-color: #777;
-}
+  border-left-color: #777;
 
-.bs-callout-default .bs-callout-heading {
+  .bs-callout-heading {
     color: #777;
+  }
 }
 
 .bs-callout-primary {
-    border-left-color: #428bca;
-}
+  border-left-color: #428bca;
 
-.bs-callout-primary .bs-callout-heading {
+  .bs-callout-heading {
     color: #428bca;
+  }
 }
 
 .bs-callout-success {
-    border-left-color: #5cb85c;
-}
+  border-left-color: #5cb85c;
 
-.bs-callout-success .bs-callout-heading {
+  .bs-callout-heading {
     color: #5cb85c;
+  }
 }
 
 .bs-callout-danger {
-    border-left-color: #d9534f;
-}
+  border-left-color: #d9534f;
 
-.bs-callout-danger .bs-callout-heading {
+  .bs-callout-heading {
     color: #d9534f;
+  }
 }
 
 .bs-callout-warning {
-    border-left-color: #f0ad4e;
-}
+  border-left-color: #f0ad4e;
 
-.bs-callout-warning .bs-callout-heading {
+  .bs-callout-heading {
     color: #f0ad4e;
+  }
 }
 
 .bs-callout-info {
-    border-left-color: #5bc0de;
-}
+  border-left-color: #5bc0de;
 
-.bs-callout-info .bs-callout-heading {
+  .bs-callout-heading {
     color: #115599;
+  }
 }
 
 /* #endregion Callouts*/

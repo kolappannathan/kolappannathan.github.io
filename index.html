@@ -29,3 +29,23 @@ layout: default
   </div>
   {% endfor %}
 </div>
+
+<hr>
+<h3 class="content-heading">Old Projects (Discontinued)</h3>
+<br>
+
+<div class="row">
+  {% for item in site.data.old-project-cards %}
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{item.subtitle}}</h6>
+        <p class="card-text">{{item.desc}}</p>
+        <a href="{{item.know-more-link}}" class="card-link">Know More</a>
+        <a href="{{item.github-link}}" target="blank" class="card-link">View in GitHub</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
