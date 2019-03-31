@@ -1,8 +1,3 @@
----
-# this ensures Jekyll reads the file to be transformed into CSS later
-# ignore the error
----
-
 /*
 * CSS in resume page
 * To be used in combination with resume-print.css
@@ -10,7 +5,7 @@
 * Ref: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css
 */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500");
 
 body {
   background: repeating-linear-gradient(135deg, #eee 0, #eee 5%, #f8f8f8 0, #f8f8f8 50%) 0/20px 20px;

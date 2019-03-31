@@ -1,12 +1,19 @@
 ---
-# this ensures Jekyll reads the file to be transformed into CSS later
-# ignore the error
 ---
 
-@import url("https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono");
+/*
+  The above lines are added so that Jekyll will process the file. Ignore the error
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Product+Sans");
+
+html {
+  --site-colour: #0375b4;
+  --secondary-colour: #007849;
+}
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Product Sans", sans-serif;
   background-color: rgb(251, 251, 251);
   line-height: 27px;
 }
@@ -15,8 +22,12 @@ p {
   text-indent: 2em;
 }
 
+a {
+  color: var(--site-colour);
+}
+
 .content-heading {
-  color: #007849;
+  color: var(--secondary-colour);
   font-size: 25px;
   margin: 10px 0px 10px 0px;
 }
@@ -44,6 +55,7 @@ p {
     margin: 1px 5px 1px 0px;
     max-height: 50px;
     min-width: 50px;
+    color: white;
     div {
       padding: 10px 0px 10px 0px;
     }
@@ -51,28 +63,23 @@ p {
 
   .facebook {
     background-color: #3b5998;
-    color: #ffffff;
   }
 
   .linkedin {
     background-color: #0077b5;
-    color: #ffffff;
   }
 
   .twitter {
     background-color: #1da1f2;
-    color: #ffffff;
   }
 
   .instagram {
     background-color: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-    color: #ffffff;
   }
 
   .medium {
-    background-color: #000;
-    color: #fff;
+    background-color: black;
   }
 }
 
@@ -99,14 +106,14 @@ main {
 }
 
 nav {
-  background-color: #0375b4;
-  color: #ffffff;
+  background-color: var(--site-colour);
+  color: white;
 
   a,
   a:hover,
   a:visited {
     /* Color formatting for Home button */
-    color: #ffffff;
+    color: white;
   }
 }
 
