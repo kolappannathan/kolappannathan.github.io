@@ -1,13 +1,18 @@
-- title: AMP Blogger Templates
-  subtitle: Why not give it a try?
-  desc: This is an attempt to implement Google's Accelerated Mobile Pages (AMP) in Blogger. These template take advantage of the custome template feature present in Blogger.
-  know-more-link: /projects/amp-blogger-templates/index.html
-  github-link: https://github.com/kolappannathan/amp-blogger-templates
 - title: Simple CSV Logger
   subtitle: Log into a csv file
   desc: This is a C# logger class which logs error and other debug info as comma separated values into a CSV file instead of a text file as it is usually done.
   know-more-link: /projects/simple-csv-logger/index.html
   github-link: https://github.com/kolappannathan/simple-csv-logger
+- title: SXWjs
+  subtitle: Warn your users
+  desc: SXW.js is an open-source javascript library that is used to display configurable console warnings to users aginst Self XSS attacks and help prevent it.
+  know-more-link: https://sxw.js.org
+  github-link: https://github.com/sxwjs/sxwjs
+- title: AMP Blogger Templates
+  subtitle: Why not give it a try?
+  desc: This is an attempt to implement Google's Accelerated Mobile Pages (AMP) in Blogger. These template take advantage of the custome template feature present in Blogger.
+  know-more-link: /projects/amp-blogger-templates/index.html
+  github-link: https://github.com/kolappannathan/amp-blogger-templates
 - title: Acrylic CSS
   subtitle: CSS for acrylic design
   desc: A simple css stylesheet for creating acrylic effect / frozen glass effect in websites. This is inpired from Microsoft's Fluent Design Language in Windows 10.
