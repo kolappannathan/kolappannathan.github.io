@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Roboto Regular", "Roboto", sans-serif;
+  font-family: "Roboto Regular", "Roboto", "sans-serif";
   background-color: rgb(251, 251, 251);
   line-height: 27px;
 }
@@ -61,10 +61,6 @@ a {
     }
   }
 
-  .facebook {
-    background-color: #3b5998;
-  }
-
   .linkedin {
     background-color: #0077b5;
   }
@@ -79,7 +75,7 @@ a {
   }
 
   .medium {
-    background-color: black;
+    background-color: white;
   }
 }
 
@@ -219,3 +215,22 @@ th {
 }
 
 /* #endregion Callouts*/
+
+/* #region icons */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+
+.svg-social {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  display: inline-block;
+}
+
+/* #endregion icons */
