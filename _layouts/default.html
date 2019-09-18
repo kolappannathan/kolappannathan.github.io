@@ -4,39 +4,41 @@ layout: compress
 <!doctype html>
 <html lang="en">
 
-    <head>
-        {% include meta-common.html %}
+<head>
+    {% include meta-common.html %}
 
-        <title>{{page.title}} | kolappannathan.github.io </title>
+    <title>{{page.title}} | kolappannathan.github.io </title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/lib/fontawesome/css/all.min.css">
-        <link rel="stylesheet" href="/assets/css/site.css">
-        <!-- End CSS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <!-- End CSS -->
 
-        <!-- Bootstrap -->
-        <script async src="/assets/lib/bootstrap/jquery.slim.min.js"></script>
-        <script async src="/assets/lib/bootstrap/popper.min.js"></script>
-        <script async src="/assets/lib/bootstrap/bootstrap.min.js"></script>
-        <!-- End Bootstrap -->
+    <!-- Bootstrap -->
+    <script async src="/assets/lib/bootstrap/jquery.slim.min.js"></script>
+    <script async src="/assets/lib/bootstrap/popper.min.js"></script>
+    <script async src="/assets/lib/bootstrap/bootstrap.min.js"></script>
+    <!-- End Bootstrap -->
 
-        {% include favicon.html %}
+    {% include favicon.html %}
 
-        {% include g-tag-head.html %}
-    </head>
+    {% include g-tag-head.html %}
+</head>
 
-    <body>
-        <main class="container">
+<body>
+    {% include svg-icons.html %}
 
-            {% include g-tag-body.html %}
+    <main class="container">
 
-            {% include nav.html %}
+        {% include g-tag-body.html %}
 
-            {{content}}
+        {% include nav.html %}
 
-        </main>
+        {{content}}
 
-    </body>
+    </main>
+
+</body>
 
 </html>
