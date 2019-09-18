@@ -16,7 +16,12 @@ layout: project-page
 {% include project-detail-links.html %}
 
 <div class="bs-callout bs-callout-danger">
-    <div class="bs-callout-heading"><i class="fas fa-exclamation-circle"></i> Warning</div>
+    <div class="bs-callout-heading">
+        <svg style="margin-bottom: 0.3em;" class="svg-icon" viewBox="0 0 512 512">
+            <use xlink:href="#icon-exclamation-circle"></use>
+        </svg>
+        Warning.
+    </div>
     This styling works well with Mozilla Firefox and Google Chrome. However there are some difference on the
     rendering in Microsoft
     Edge. This is due to the absense of support of some css properties like ackground-blend-mode.
@@ -24,13 +29,15 @@ layout: project-page
 
 <div>
     <p>
-        The acrylic css file passed the W3C <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkolappannathan.github.io%2Fassets%2Flib%2Fmy-lib%2Facrylic%2Facrylic.min.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en"
+        The acrylic css file passed the W3C <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkolappannathan.github.io%2Fassets%2Flib%2Fmy-lib%2Facrylic%2Facrylic.min.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en"
             target="blank"> validation </a>.
     </p>
     <p>
         <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkolappannathan.github.io%2Fassets%2Flib%2Fmy-lib%2Facrylic%2Facrylic.min.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en"
             target="blank">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
         </a>
     </p>
 </div>
@@ -41,8 +48,8 @@ layout: project-page
 <div>
     <ol>
         <li>Download the css from with <a href="https://www.npmjs.com/package/acrylic-css" target="blank">NPM</a> or
-            <a href="https://www.nuget.org/packages/acrylic.css/" target="blank">NuGet</a> or <a href="https://github.com/kolappannathan/acrylic-css/tree/master/dist"
-                target="blank">GitHub</a>.</li>
+            <a href="https://www.nuget.org/packages/acrylic.css/" target="blank">NuGet</a> or <a
+                href="https://github.com/kolappannathan/acrylic-css/tree/master/dist" target="blank">GitHub</a>.</li>
         <li>Include the acrylic.min.css file in your website.</li>
         <li>Change the image URL in background-image:url("../demo/demo.jpg"); to the point to your website
             background.</li>
@@ -52,7 +59,8 @@ layout: project-page
 
 <h2 class="content-heading">Credits</h2>
 <div role="doc-credits">
-    <p>I thank the stackoverflow users <a href="https://stackoverflow.com/a/44611674/5407188" target="blank" rel="external">shramee</a>
+    <p>I thank the stackoverflow users <a href="https://stackoverflow.com/a/44611674/5407188" target="blank"
+            rel="external">shramee</a>
         and <a href="https://stackoverflow.com/a/44630890/5407188" rel="external" target="blank">GibsonFX</a> for their
         contributions based on which this css is written.</p>
 </div>
