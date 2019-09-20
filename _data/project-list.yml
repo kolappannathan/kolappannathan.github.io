@@ -25,6 +25,6 @@
   github-link: https://github.com/kolappannathan/accordion
 - title: Expense Manager List
   subtitle: Category lists required for expense manager
-  desc: This repository contains income and expense categories that can be used in an expense manager application. The data is available in YAML format.
+  desc: This repository contains income and expense categories that can be used in an expense manager application. The data is available in YAML and JSON format.
   know-more-link: /projects/expense-manager-categories/index.html 
   github-link: https://github.com/kolappannathan/expense-manager-categories
