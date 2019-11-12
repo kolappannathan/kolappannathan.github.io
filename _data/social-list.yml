@@ -1,0 +1,24 @@
+- url: https://in.linkedin.com/in/kolappannathan
+  icon-class: icon-linkedin
+  css-class: social-linkedin
+  viewbox-val: 0 0 438.54 438.54
+- url: https://github.com/kolappannathan/
+  icon-class: icon-github
+  css-class: social-github
+  viewbox-val: 0 0 256 250
+- url: https://stackoverflow.com/users/5407188/kolappan-nathan
+  icon-class: icon-stackoverflow
+  css-class: social-stackoverflow
+  viewbox-val: 0 0 256 304
+- url: https://www.npmjs.com/~kolappannathan
+  icon-class: icon-npm
+  css-class: social-npm
+  viewbox-val: 0 0 32 32
+- url: https://www.nuget.org/profiles/kolappannathan
+  icon-class: icon-nuget
+  css-class: social-nuget
+  viewbox-val: 0 0 32 32
+- url: https://medium.com/@kolappannathan
+  icon-class: icon-medium
+  css-class: social-medium
+  viewbox-val: 0 0 393.541 393.541

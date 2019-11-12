@@ -67,16 +67,9 @@ layout: home
 
 <div>
   <ul>
-    <li><a href="https://codemantisa.blogspot.com/" target="blank">Code Mantisa</a> - A blog about coding
-      tutorials.</li>
-    <li><a href="https://amp-in-blogger.blogspot.com/" target="blank">AMP in Blogger</a> - A blog with tutorials
-      for
-      implementing AMP based template in blogger.</li>
-    <li><a href="https://howtoincomputer.blogspot.com/" target="blank">How to in Computer</a> - A blog for software
-      tutorials.</li>
-    <li><a href="https://epicbrowser.blogspot.com/" target="blank">Epic Privacy Browser</a> - A blog about privacy
-      based
-      Epic browser.</li>
+    {% for item in site.data.blogs %}
+    <li><a href="{{item.url}}" target="blank">{{item.name}}</a> - {{item.desc}}</li>
+    {% endfor %}
   </ul>
 </div>
 
@@ -84,48 +77,16 @@ layout: home
 <br>
 <div class="social-list">
 
-  <a href="https://in.linkedin.com/in/kolappannathan" target="blank">
-    <div class="social-linkedin">
-      <svg class="svg-social" viewBox="0 0 438.54 438.54">
-        <use xlink:href="#icon-linkedin"></use>
+  {% for item in site.data.social-list %}
+  <a href="{{item.url}}" target="blank">
+    <div class="{{item.css-class}}">
+      <svg class="svg-social" viewBox="{{item.viewbox-val}}">
+        <use xlink:href="#{{item.icon-class}}"></use>
       </svg>
     </div>
   </a>
-  <a href="https://github.com/kolappannathan/" target="blank">
-    <div class="social-github">
-      <svg class="svg-social" viewBox="0 0 256 250">
-        <use xlink:href="#icon-github"></use>
-      </svg>
-    </div>
-  </a>
-  <a href="https://stackoverflow.com/users/5407188/kolappan-nathan" target="blank">
-    <div class="social-stackoverflow">
-      <svg class="svg-social" viewBox="0 0 256 304">
-        <use xlink:href="#icon-stackoverflow"></use>
-      </svg>
-    </div>
-  </a>
-  <a href="https://www.npmjs.com/~kolappannathan" target="blank">
-    <div class="social-npm">
-      <svg class="svg-social" viewBox="0 0 32 32">
-        <use xlink:href="#icon-npm"></use>
-      </svg>
-    </div>
-  </a>
-  <a href="https://www.nuget.org/profiles/kolappannathan" target="blank">
-    <div class="social-nuget">
-      <svg class="svg-social" viewBox="0 0 32 32">
-        <use xlink:href="#icon-nuget"></use>
-      </svg>
-    </div>
-  </a>
-  <a href="https://medium.com/@kolappannathan" target="blank">
-    <div class="social-medium">
-      <svg class="svg-social" viewBox="0 0 393.541 393.541">
-        <use xlink:href="#icon-medium"></use>
-      </svg>
-    </div>
-  </a>
+  {% endfor %}
+
 </div>
 <br>
 <br>
