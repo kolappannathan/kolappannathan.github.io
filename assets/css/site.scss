@@ -61,21 +61,23 @@ a {
     }
   }
 
-  .linkedin {
+  .social-linkedin {
     background-color: #0077b5;
   }
-
-  .twitter {
-    background-color: #1da1f2;
+  .social-medium {
+    background-color: #daffda;
   }
-
-  .instagram {
-    background-color: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  .social-npm{
+    background-color: #CC3534;
   }
+  .social-nuget{
+    background-color: #004880;
+  }
+  .social-github{
+    background-color: #F0F0F0;
+  }
+  .social-stackoverflow{
 
-  .medium {
-    background-color: white;
   }
 }
 
