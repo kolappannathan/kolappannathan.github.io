@@ -12,8 +12,8 @@ collections:
 # Handling Reading
 safe                : false
 include             : []
-exclude             : [".git", ".gitignore", ".vscode", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
-keep_files          : ["assets/favicons", "assets/images", "assets/lib", "favicon.png",  "site.webmanifest"]
+exclude             : [".git", ".gitignore", ".vscode", "Gemfile", "Gemfile.lock", "LICENSE"]
+keep_files          : ["favicon.png",  "site.webmanifest", "assets/favicons", "assets/images", "assets/lib",]
 encoding            : "utf-8"
 markdown_ext        : "md"
 strict_front_matter : false
@@ -56,18 +56,6 @@ liquid:
 sass:
     style: compressed
     sass_dir: assets/css
-
-# HTML compression
-# Ref: https://github.com/penibelst/jekyll-compress-html
-compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  ignore:
-    envs: []
-  blanklines: false
-  profile: false
-  startings: []
 
 # Markdown Processors
 rdiscount:
