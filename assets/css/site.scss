@@ -8,8 +8,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 html {
+  /* Declaring colours */
+
   --site-colour: #0375b4;
   --secondary-colour: #007849;
+
 }
 
 body {
@@ -68,16 +71,16 @@ a {
     background-color: #daffda;
   }
   .social-npm{
-    background-color: #CC3534;
+    background-color: #cc3534;
   }
   .social-nuget{
     background-color: #004880;
   }
   .social-github{
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
   }
   .social-stackoverflow{
-
+    background-color: white;
   }
 }
 
@@ -91,7 +94,7 @@ a {
 }
 
 code {
-  font-family: "Ubuntu Mono", monospace;
+  font-family: monospace;
 }
 
 /* #endregion Code Block*/
@@ -221,13 +224,6 @@ th {
 /* #region icons */
 
 .svg-icon {
-  width: 1em;
-  height: 1em;
-  fill: currentColor;
-  display: inline-block;
-}
-
-.svg-social {
   width: 1em;
   height: 1em;
   fill: currentColor;

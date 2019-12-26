@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: home
+layout: default
 ---
 
 <div>
@@ -80,7 +80,7 @@ layout: home
   {% for item in site.data.social-list %}
   <a href="{{item.url}}" target="blank">
     <div class="{{item.css-class}}">
-      <svg class="svg-social" viewBox="{{item.viewbox-val}}">
+      <svg class="svg-icon" viewBox="{{item.viewbox-val}}">
         <use xlink:href="#{{item.icon-class}}"></use>
       </svg>
     </div>
