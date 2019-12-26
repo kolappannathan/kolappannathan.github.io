@@ -13,7 +13,7 @@ collections:
 safe                : false
 include             : []
 exclude             : [".git", ".gitignore", ".vscode", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
-keep_files          : ["assets/favicons", "assets/images", "assets/lib", "browserconfig.xml", "favicon.ico",  "googledbcf9edd8524175a.html", "site.webmanifest"]
+keep_files          : ["assets/favicons", "assets/images", "assets/lib", "browserconfig.xml", "favicon.ico",  "site.webmanifest"]
 encoding            : "utf-8"
 markdown_ext        : "md"
 strict_front_matter : false
