@@ -12,7 +12,7 @@ layout: default
   </p>
   <p>
     <a href="/resume">
-      <svg style="margin-bottom: 0.5em;" class="svg-icon" viewBox="0 0 512 512">
+      <svg style="margin-bottom: 0.5em;" class="svg-icon">
         <use xlink:href="#icon-resume"></use>
       </svg>
       Resume
@@ -20,7 +20,7 @@ layout: default
   </p>
   <p>
     <a href="/changelog">
-      <svg style="margin-bottom: 0.5em;" class="svg-icon" viewBox="0 0 465.2 465.2">
+      <svg style="margin-bottom: 0.5em;" class="svg-icon">
         <use xlink:href="#icon-changelog"></use>
       </svg>
       Consolidated changelog & updates.
@@ -90,7 +90,7 @@ layout: default
   {% for item in site.data.social-list %}
   <a href="{{item.url}}" target="blank">
     <div class="{{item.css-class}}">
-      <svg class="svg-icon" viewBox="{{item.viewbox-val}}">
+      <svg class="svg-icon">
         <use xlink:href="#{{item.icon-class}}"></use>
       </svg>
     </div>
