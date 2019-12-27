@@ -228,6 +228,11 @@ th {
   height: 1em;
   fill: currentColor;
   display: inline-block;
+  margin-bottom: 0.3em; // bottom margin is used to align the icons with text
+}
+
+.svg-icon.social-icon {
+  margin-bottom: 0em; // social icons don't need bottom margin
 }
 
 /* #endregion icons */
