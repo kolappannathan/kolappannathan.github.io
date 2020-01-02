@@ -240,11 +240,24 @@ th {
 
 /* #endregion 404 Page */
 
-/* #region Acrylic Demo */
+/* #region Demo */
 
 .acrylic-cards {
   height: 70vh;
   width: 80vw;
 }
 
-/* #endregion Acrylic Demo */
+.acc-demo-card {
+  border: 0.1px grey solid;
+  max-width: 250px !important; /*!important used to override bootstrap*/
+  margin-top: 25px;
+  background-color: white;
+}
+
+.acc-title{
+  font-size: 25px;
+  font-weight: 450;
+  margin-top: 5px;
+}
+
+/* #endregion Demo */
