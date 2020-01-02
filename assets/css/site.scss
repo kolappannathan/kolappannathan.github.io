@@ -35,6 +35,8 @@ a {
   margin: 10px 0px 10px 0px;
 }
 
+/* #region Card UI */
+
 .card {
   margin-bottom: 5px;
   background-color: rgba(252, 252, 252, 0);
@@ -42,49 +44,11 @@ a {
 }
 
 .card:hover {
-  background-color: rgba(253, 253, 253, 0.58);
+  background-color: #FFF;
   border-color: rgba(0, 0, 0, 0.5);
 }
 
-/* #region Social Media Icons*/
-
-.social-list {
-  list-style: none;
-  font-size: 30px;
-  text-align: center;
-
-  a {
-    display: inline-block;
-    margin: 1px 5px 1px 0px;
-    max-height: 50px;
-    min-width: 50px;
-    color: white;
-    div {
-      padding: 10px 0px 10px 0px;
-    }
-  }
-
-  .social-linkedin {
-    background-color: #0077b5;
-  }
-  .social-medium {
-    background-color: #daffda;
-  }
-  .social-npm{
-    background-color: #cc3534;
-  }
-  .social-nuget{
-    background-color: #004880;
-  }
-  .social-github{
-    background-color: #f0f0f0;
-  }
-  .social-stackoverflow{
-    background-color: white;
-  }
-}
-
-/* #endregion Social Media Icons*/
+/* #endregion Card UI */
 
 /* #region Code Block*/
 
@@ -108,14 +72,6 @@ main {
 
 nav {
   background-color: var(--site-colour);
-  color: white;
-
-  a,
-  a:hover,
-  a:visited {
-    /* Color formatting for Home button */
-    color: white;
-  }
 }
 
 /* #endregion Navigation*/
@@ -163,28 +119,8 @@ th {
   margin-bottom: 0;
 }
 
-.bs-callout code {
-  border-radius: 3px;
-}
-
 .bs-callout + .bs-callout {
   margin-top: -5px;
-}
-
-.bs-callout-default {
-  border-left-color: #777;
-
-  .bs-callout-heading {
-    color: #777;
-  }
-}
-
-.bs-callout-primary {
-  border-left-color: #428bca;
-
-  .bs-callout-heading {
-    color: #428bca;
-  }
 }
 
 .bs-callout-success {
@@ -235,4 +171,71 @@ th {
   margin-bottom: 0em; // social icons don't need bottom margin
 }
 
+.social-list {
+  list-style: none;
+  font-size: 30px;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    margin: 1px 5px 1px 0px;
+    max-height: 50px;
+    min-width: 50px;
+    color: white;
+    div {
+      padding: 10px 0px 10px 0px;
+    }
+  }
+
+  .social-linkedin {
+    background-color: #0077b5;
+  }
+  .social-medium {
+    background-color: #daffda;
+  }
+  .social-npm{
+    background-color: #cc3534;
+  }
+  .social-nuget{
+    background-color: #004880;
+  }
+  .social-github{
+    background-color: #f0f0f0;
+  }
+  .social-stackoverflow{
+    background-color: white;
+  }
+}
+
 /* #endregion icons */
+
+/* #region 404 Page */
+
+.outer-div-404 {
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+
+.inner-div-404 {
+  display: table-cell;
+
+  h1 {
+    font-size: 50px;
+    display: inline-block;
+    padding-right: 10px;
+    animation: typing .5s alternate infinite;
+  }
+}
+
+@keyframes typing {
+  from {
+      box-shadow: inset -3px 0px 0px #888;
+  }
+
+  to {
+      box-shadow: inset -3px 0px 0px transparent;
+  }
+}
+
+/* #endregion 404 Page */
