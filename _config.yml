@@ -1,7 +1,6 @@
 # Where things are
 source              : .
 destination         : ./_site
-collections_dir     : .
 layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
@@ -13,7 +12,7 @@ collections:
 safe                : false
 include             : []
 exclude             : [".git", ".gitignore", ".vscode", "Gemfile", "Gemfile.lock", "LICENSE"]
-keep_files          : ["favicon.png",  "site.webmanifest", "assets/favicons", "assets/images", "assets/lib",]
+keep_files          : ["favicon.png",  "site.webmanifest", "assets/favicons", "assets/images", "assets/lib"]
 encoding            : "utf-8"
 markdown_ext        : "md"
 strict_front_matter : false
