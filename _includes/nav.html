@@ -1,18 +1,34 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <a class="navbar-brand" href="/">Kolappan N</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="navbar-brand" href="/">Kolappan N</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      {% if page.nav-section == "home" %}
-      <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+      {% if page.nav-section != "blog" and page.layout != "post" and page.nav-section != "resume" and page.nav-section != "changelog" %}
+      <a class="nav-item nav-link active" href="/">Home</a>
       {% else %}
       <a class="nav-item nav-link" href="/">Home</a>
       {% endif %}
+
+      {% if page.nav-section == "blog" or page.layout == "post" %}
+      <a class="nav-item nav-link active" href="/blog">Blog</a>
+      {% else %}
       <a class="nav-item nav-link" href="/blog">Blog</a>
+      {% endif %}
+
+      {% if page.nav-section == "resume" %}
+      <a class="nav-item nav-link active" href="/resume" target="blank">Resume</a>
+      {% else %}
       <a class="nav-item nav-link" href="/resume" target="blank">Resume</a>
+      {% endif %}
+
+      {% if page.nav-section == "changelog" %}
+      <a class="nav-item nav-link active" href="/changelog">ChangeLog</a>
+      {% else %}
       <a class="nav-item nav-link" href="/changelog">ChangeLog</a>
+      {% endif %}
     </div>
   </div>
 </nav>
