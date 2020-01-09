@@ -6,7 +6,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      {% if page.nav-section != "blog" and page.layout != "post" and page.nav-section != "resume" and page.nav-section != "changelog" %}
+      {% if page.nav-section == "home" %}
       <a class="nav-item nav-link active" href="/">Home</a>
       {% else %}
       <a class="nav-item nav-link" href="/">Home</a>
