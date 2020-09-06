@@ -1,72 +1,14 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    {% include meta-common.html %}
-
-    <title>{{page.title}}</title>
-
-    <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/site.css">
-
-    <script async src="/assets/lib/bootstrap/jquery-3.4.1.slim.min.js"></script>
-    <script async src="/assets/lib/bootstrap/popper.min.js"></script>
-    <script async src="/assets/lib/bootstrap/bootstrap.min.js"></script>
-
-    <link rel="apple-touch-icon" href="/assets/favicons/180x180.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Kolappan N">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#0375b4">
-
-    <link rel="shortcut icon" href="/favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/16x16.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/32x32.png">
-
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#0375b4">
-
-</head>
-
-<body>
-    <main class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <a class="navbar-brand" href="/">Kolappan N</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                {% if page.nav-section == "home" %}
-                <a class="nav-item nav-link active" href="/">Home</a>
-                {% else %}
-                <a class="nav-item nav-link" href="/">Home</a>
-                {% endif %}
-          
-                {% if page.nav-section == "blog" or page.layout == "post" %}
-                <a class="nav-item nav-link active" href="/blog">Blog</a>
-                {% else %}
-                <a class="nav-item nav-link" href="/blog">Blog</a>
-                {% endif %}
-          
-                {% if page.nav-section == "resume" %}
-                <a class="nav-item nav-link active" href="/resume" target="blank">Resume</a>
-                {% else %}
-                <a class="nav-item nav-link" href="/resume" target="blank">Resume</a>
-                {% endif %}
-          
-                {% if page.nav-section == "changelog" %}
-                <a class="nav-item nav-link active" href="/changelog">ChangeLog</a>
-                {% else %}
-                <a class="nav-item nav-link" href="/changelog">ChangeLog</a>
-                {% endif %}
-              </div>
-            </div>
-          </nav>
-
-        {{content}}
-    </main>
-</body>
-
+<!DOCTYPE HTML>                                                                
+<html lang="en">                                                                
+    <head>                                                                      
+        <meta charset="utf-8">
+        <title>Redirect | kolappan.dev</title>
+        <meta http-equiv="refresh" content="0;url={{page.new-url}}" />      
+        <link rel="canonical" href="{{page.new-url}}" />                    
+    </head>                                                                                                                                                                  
+    <body>                                                                      
+        <h1>                                                                    
+            The page been moved to <a href="{{page.new-url}}">{{page.new-url}}</a>
+        </h1>                                                                  
+    </body>                                                                    
 </html>

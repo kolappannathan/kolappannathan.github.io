@@ -1,23 +1,4 @@
 ---
 layout: default
-title: Blog
-permalink: /blog
-nav-section: blog
+new-url: https://kolappan.dev/blog
 ---
-<h3 class="content-heading">Latest Posts</h3>
-
-{% for post in site.posts %}
-
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-    <div class="card">
-        <a href="{{ post.url }}" class="text-decoration-none" style="color: inherit;">
-            <div class="card-body">
-                <h5 class="card-title">{{post.title}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{post.date | date_to_string}}</h6>
-                <p class="card-text">{{post.excerpt}}</p>
-                <a href="{{ post.url }}" class="card-link">Read more >></a>
-            </div>
-        </a>
-    </div>
-</div>
-{% endfor %}
